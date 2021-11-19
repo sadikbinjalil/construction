@@ -1,0 +1,774 @@
+*{margin: 0;padding: 0;}
+
+/*
+==============================
+   =     font     =
+===============================
+*/
+
+
+
+
+@import url("font/Montserrat Bold.ttf");
+@import url("font/Poppins Bold.ttf");
+@import url("font/Poppins Regular.ttf");
+@import url("font/Poppins SemiBold.ttf");
+@import url("font/ZillaSlab Bold.ttf");
+@import url("font/ZillaSlab SemiBold.ttf");
+
+/* reset CSS */
+
+html,
+body { height: 100% }
+
+a:focus { outline: 0 solid }
+
+a:hover { text-decoration: none }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family:Montserrat;
+    color: #363952;
+}
+
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    top: 20px;
+    position: relative;
+}
+
+p{
+    font-family: Poppins;
+    color: #363952;
+}
+
+.row{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.overlay{
+    background: rgba(250, 250, 250, 0.9);
+    height: 100%;
+}
+
+.section_title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    font-family: Montserrat;
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+#preloader {
+ position: fixed;
+ left: 0;
+ top: 0; 
+ z-index: 999;
+ width: 100%;
+ height: 100%;
+ overflow: visible; 
+ background: #fff url('img/preloader.gif') no-repeat center center; }
+
+
+/*
+============================
+    =    header css   =
+============================
+*/
+
+.full_header{
+    height: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color:#fff;
+    z-index: 1000;
+    -webkit-transition: padding 0.4s;
+    -moz-transition: padding 0.4s;
+    transition:0.4s;
+    text-align:center;
+
+}
+
+.navbar{
+    -webkit-transition: padding 0.4s;
+    -moz-transition: padding 0.4s;
+    transition: padding 0.4s;
+}
+
+.header.shrink,
+.header.shrink .navbar{
+    padding: 0;
+    background: #f47425;
+    transition: .3s;
+}
+
+.header.shrink .navbar-brand i,
+.header.shrink .navbar li.nav-item a:hover{
+    color: #fff!important;
+}
+.header.shrink .navbar li.nav-item.active a{
+    color: #363952 !important;
+}
+
+.header.shrink .navbar li.nav-item{
+    transition: all.3s;
+}
+
+header{
+    border-bottom: 1px solid #f47425;
+    padding: 8px 0;
+}
+
+.navbar-brand{
+    font-family: ZillaSlab;
+    font-size: 40px;
+    color: #363952 !important;
+    text-transform: capitalize;
+}
+
+.navbar-brand i{
+    color: #f47425;
+    padding-right: 20px;
+}
+
+.navbar li.nav-item {
+    padding:0 10px;
+    font-family:ZillaSlab ;
+    font-size: 24px;
+    font-weight: 500;
+    color: #363952;
+    transition: all .3s;
+    text-transform: capitalize;
+}
+
+.navbar li.nav-item.active a{
+    color: #f47425 !important;
+}
+
+.navbar li.nav-item a:hover{
+    color: #f47425 !important;
+}
+
+.navbar .collapse.show{
+    background: #f47425;
+}
+
+.navbar .collapse.show li.nav-item.active a{
+    color: #363952 !important;
+}
+
+.navbar .collapse.show .nav-item .nav-link:hover{
+    color: #fff !important;
+}
+
+.header .nav-link.active{
+    color: #fff !important;
+}
+
+.banner_wrapper{
+    padding-top: 215px;
+}
+
+.bennet_title{
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.banner_sub_title{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+.info_btn{
+    background: #f47425;
+    padding: 20px 40px;
+    font-family: ZillaSlab;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.info_btn:hover{
+    background: transparent;
+    color: #f47425;
+    border: 1px solid #f47425;
+}
+
+.right_img{
+    padding-top: 200px;
+    padding-left: 60px;
+}
+
+
+/*
+============================
+    =   end header css   =
+============================
+*/
+
+
+/*
+============================
+    =   start tab css   =
+============================
+*/
+.tab_saction{
+    padding: 0;
+}
+
+.tab_saction .nav-link.active{
+    border-bottom:  2px solid #f47425;
+}
+
+.tab_saction .nav-item{
+    position: relative;
+}
+
+.tab_saction .nav-item:after{
+    position: absolute;
+    width: 1px;
+    height: 48px;
+    background: #f47425;
+    right: 0;
+    top: 10%;
+    content: "";
+}
+
+.tab_saction .nav-item:last-child:after{
+    content: none;
+}
+
+.tab_title{
+    font-family: ZillaSlab;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.tab_sub_title{
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    padding-left: 50px;
+}
+
+.tab_icon{
+    width: 46px;
+    height: 42px;
+    margin-right: 20px;
+}
+
+.tab_content{
+    background: #f6fbfe;
+    padding: 90px;
+}
+
+.single_contant{
+    background: #fff;
+    padding:30px 28px;
+    display: inline-block; 
+    transition: all .4s;   
+}
+
+.single_contant:hover{
+    box-shadow: 1px 5px 60px -23px;
+}
+
+.single_contant:hover .tab_contant_link{
+    color: #f47425;
+}
+
+.tab_contant_title{
+    font-family: ZillaSlab;
+    font-weight: 500;
+    font-size: 36px;
+    color: #363952;
+}
+
+.tab_contant_info{
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.tab_contant_link{
+    float: right;
+    font-family:ZillaSlab ;
+    font-weight: 500;
+    font-size: 22px;
+    color: #363952;
+    transition: all .3s;
+}
+
+.tab_contant_link i{
+    padding-left: 10px;
+    vertical-align: middle;
+}
+/*============================
+    =   end tab css   =
+    ============================*/
+
+/*============================
+    =   start civil css   =
+    ============================*/
+    .civil_wrapper .section_title{
+        font-size: 32px;
+    }
+
+    .section_contant{
+        padding-bottom:  40px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .civil{
+        padding: 150px 0;
+    }
+/*============================
+    =   end civil css   =
+    ============================*/
+
+/*============================
+    =   start provid css   =
+    ============================*/
+
+    .idea_wrapper{
+        padding-top: 100px;
+    }
+
+    .provide_title{
+        font-family: ZillaSlab;
+        font-size: 32px;
+        font-weight: 500;
+
+    }
+
+    .idea_contant{
+        padding: 0 40px;
+    }
+
+    .provide_iteam_list{
+        list-style-type: none;
+        position: relative;
+        padding-left: 25px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .provide_iteam_list:before{
+        width: 15px;
+        height: 3px;
+        position: absolute;
+        content: "";
+        background: #f47425;
+        left: 0;
+        top: 50%;
+    }
+
+    .right_iteam_list{
+        float: right;
+    }
+
+/*============================
+    =   end provide css   =
+    ============================*/
+
+/*============================
+    =   start counter css   =
+    ============================*/
+    .counter .section_title{
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    .counter .section_contant{
+        padding-bottom: 0;
+    }
+
+    .counter {
+      animation-duration: 1s;
+      animation-delay: 0s;
+      background-image: url(img/bg_3.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+  }
+
+  .single_counter{
+    float: left;
+    padding-right: 34px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.counter_title{
+    font-family: ZillaSlab;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.counter-value{
+    font-family: ZillaSlab;
+    font-weight: 600;
+    font-size: 36px;
+    color: #f47425;
+}
+
+.pdng{
+    padding: 70px 0;
+}
+/*============================
+    =   end counter css   =
+    ============================*/
+
+/*============================
+    =   start tastimonial css   =
+    ============================*/
+    .tastiminial{
+        padding:100px 0;
+    }
+
+    .single_slider{
+        margin: 15px;
+        padding: 27px 10px;
+        transition: all .3s;
+    }
+
+    .single_slider:hover{
+        box-shadow: -1px 3px 50px -25px;
+    }
+
+    .tastiminial .section_contant{
+        padding-bottom: 40px;
+    }
+
+    .tastimonial_img{
+        float: left;
+        width: 100px !important;
+        height: 100px;
+        margin-right:  15px;
+        margin-top: -20px;
+    }
+
+    .tastimonial_title{
+        font-family: ZillaSlab;
+        font-weight:   600;
+        font-size: 24px;
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+
+    .tastimonial_sub_title{
+        font-family: Poppins;
+        font-weight: 400;
+        text-transform: capitalize;
+        padding-bottom: 13px;
+    }
+
+    .tastimonial_contant{
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .owl-carousel .owl-dots{
+        display: block !important;
+        text-align: center;
+    }
+
+    .owl-carousel .owl-dots button{
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        border: 2px solid #f47425;
+        border-radius: 50%
+    }
+
+    .owl-carousel .owl-dots button.active{
+        background: #f47425;
+    }
+/*============================
+    =   end tastimonial css   =
+    ============================*/
+
+/*============================
+    =   start footer css   =
+    ============================*/
+    .footer{
+        padding: 100px 0;
+        background: #f1f6f9;
+    }
+    
+    .footer_title{
+        font-family: ZillaSlab;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: capitalize;
+        padding-bottom: 25px;
+    }
+
+    .social_single_icon{
+        float: left;
+        padding: 14px 18px;
+        margin-right: 2px;
+        text-align: center;
+        transition: all .4s;
+        cursor: pointer;
+    }
+    .social_single_icon:hover{
+        transform: scale(1.1);
+    }
+    .social_single_icon i{
+        margin: 5px;
+    }
+    .social_single_icon p{
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    .social_single_icon a{
+        color: #fff;
+        font-size: 14px;
+        background: #4f6aab;
+        padding: 10px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .fb_clr{
+        background: #3b59a1;
+    }
+
+    .fb_clr i{
+        margin: 0 7px;
+        margin-bottom: 6px;
+    }
+    .twit_clr{
+        background: #46b0e4;
+    }
+
+    .twit_clr a{
+        background: #59b8e7;
+    }
+    .pdngl ul{
+        list-style-type: none;
+    }
+
+    .g_clr{
+        background: #dd4c39;
+    }
+    .g_clr i{
+        margin: 4px;
+        margin-bottom: 6px;
+    }
+
+    .g_clr a{
+        background: #e05e4d;
+    }
+
+    .form-control{
+        background: #dee3e8;
+    }
+
+    .form-control:focus{
+        background: #dee3e8;
+        box-shadow: none;
+        outline: none;
+        border: 1px solid #f47425;
+    }
+
+    .email{
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .email button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        outline: none;
+        width: 40px;
+        cursor: pointer;
+        color: #fff;
+        border: 0;
+        background: #f47425;
+    }
+
+    .work_widget img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 4px;
+        transition: all .3s;
+    }
+
+    .work_widget img:hover{
+        transform: scale(1.2);
+    }
+
+    .more{
+        font-size: 13px;
+        color: #f47425;
+        padding-top: 21px;
+        display: block;
+        transition: all .3s;
+    }
+
+    .more i{
+        vertical-align: middle;
+        padding-left: 5px;
+    }
+
+    .tag_widget ul{
+        list-style-type: none;
+    }
+
+    .tag_widget ul li{
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-right: 8px;
+    }
+
+    .tag_widget ul li a{
+        background: #e0e4e7;
+        padding: 7px 12px;
+        color:  #969696;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: capitalize;
+        transition: all .3s;
+    }
+
+    .tag_widget ul li a:hover{
+        background: #f47425;
+        color: #fff;
+    }
+
+    .copyright_area{
+        background: #f47425;
+    }
+
+    .copyright_area p{
+        margin-bottom: 0;
+        padding: 10px 0;
+        color: #fff;
+        text-transform: capitalize;
+    }
+
+    .copyright_area a{
+        text-transform: uppercase;
+        color: #fff; 
+    }
+
+    .copyright_area a:hover{
+        color: #46b0e4;
+    }
+
+    button.back-to-top{
+      margin: 0 !important;
+      padding: 0 !important;
+      background: #fff;
+      height: 0px;
+      width: 0px;
+      overflow: hidden;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      color: transparent;
+      clear: both;
+      visibility: hidden;
+      position: fixed;
+      cursor: pointer;
+      display: block;
+      border: none;
+      right: 50px;
+      bottom: 75px;
+      font-size: 0px;
+      outline: 0 !important;
+      z-index: 99;
+      transition: all .3s ease-in-out;
+
+  }
+
+  button.back-to-top i{
+    color: #f47425;
+}
+
+button.back-to-top i:hover{
+    color: #fff;
+}
+
+button.back-to-top:hover,
+button.back-to-top:active,
+button.back-to-top:focus{
+  outline: 0 !important;
+
+}
+
+button.back-to-top::before {
+  content: "";
+  font-family: "FontAwesome";
+  display: block;
+  vertical-align: middle;
+  margin: -5px 0 auto;
+}
+
+button.back-to-top.show {
+  display: block;
+  background: #fff;
+  color: #00ab6c;
+  font-size: 25px;
+  right: 25px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  visibility: visible;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+button.back-to-top.show:hover{
+    background: #f47425;
+    color: #fff;
+}
+
+button.back-to-top.show:active {
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*============================
+    =   end footer css   =
+    ============================*/
